@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left,lightblue, lightgreen );
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+.app{
+display: grid;
+grid-template-columns: repeat(auto-fill, 300px);
+gap: 40px;
+justify-content: center;
+padding: 50px;
+}
+
+.heading{
+    color: darkblue;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+.note{
+    background: rgba(255, 255, 255, .1);
+    padding: 17px;
+    border: none;
+    resize: none;
+    outline:  none;
+    height: 275px;
+    font-size: 18px;
+    color: darkblue;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.note::placeholder{
+    color: gray;
+    opacity: 30%;
+}
+
+.note:hover,.note:focus{
+    box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+    transition: all 300ms ease;
+}
+
+.info-text{
+    text-align: center;
+    color: darkblue;
+    font-size: 18px;
+}
+
+.btn{
+    height: 275px;
+    font-size: 100px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, .2);
+    color: rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    border-color: rgba(255, 255, 255, .37);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, .55);
+    color: rgba(0, 0, 0, .6);
+    transition: all 300ms ease;
+}
